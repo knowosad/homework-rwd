@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin-ext');
+
+html {
+   font-family: "Open Sans", arial;
+}
+
+*{
+    box-sizing: border-box
+}
+
+.screen-photo{
+        background-image: url(../obrazy/man-1.jpg);
+        height: 100vh;;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+}
+.text-box{
+        position: absolute;
+        background-color: transparent;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 90%;
+        color: #fff;
+        top: 50%;
+        text-align: left;
+        padding: 1% 3%;
+    
+    }
+    
+    .text-first-line{
+        display: inline-block;
+        font-size: 2.3rem;
+        margin: 0;
+    }
+    
+    .text-second-line{
+        
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+
+
+@media (max-width: 1170px){
+    .screen-photo{
+        background-image: url(../obrazy/man-2.jpg);
+        height: 70vh;
+    }   
+    
+    .text-box{
+        top: 10%;
+        left: 50%;
+    }
+    
+    .text-first-line{
+        text-align: left;
+        font-size: 2.3rem;
+        margin: 0;
+    }
+    
+    .text-second-line{
+        font-size: 2.5rem;
+        margin: 0;
+        padding-top: 3%
+    }
+}
+@media (max-width: 992px){
+    .screen-photo{
+        background-image: url(../obrazy/man-1.jpg);
+        height: 50vh;
+    }   
+    
+    .text-box{
+        color: #000;
+        margin: 0;
+        padding: 0;
+        left: 50%;
+        top: 52%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 90%;
+    }
+    
+    .text-first-line{
+        font-size: 1rem;
+        margin: 0;
+    }
+    
+    .text-second-line{
+        font-size: 1.2rem;
+        margin: 0;
+        padding-top: 3%
+    }
+}
